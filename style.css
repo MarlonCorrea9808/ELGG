@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #b1c9ef;
+    width: 100%;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+header{
+    padding: 2em;
+    background: #286ac6;
+    width: 100%;
+}
+
+.dropdown-button{
+    width: 160px;
+    background: #ffffff;
+    border-radius: 10px;
+    color: #000;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown{
+    position: relative;
+    display: block;
+}
+
+.dropdownitens{
+    display: none;
+    position: absolute;
+    background: #ececec;
+    border-radius: 10px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px #00000030;
+    z-index: 1;
+}
+
+.dropdownitens a{
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownitens a:hover{
+    border-radius: 10px;
+    background: #d3d3d3;
+}
+
+.dropdown:hover .dropdownitens{
+    display: block;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #d3d3d3;
+    transition: 0.5s;
+}
+
+.container{
+    margin: 1em 2em 0em 2em;
+    background: #fff;
+    padding: 2em;
+    text-align: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.container img{
+    width: 100%;
+}
+
+.sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.sec img{
+    margin: 1em;
+}
+
+.card{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin: 2em;
+    padding: 3em;
+    background: #fff;
+    text-align: justify;
+    border-radius: 25px 5px;
+}
+
+.card img{
+    width: 60%;
+}
+
+.card p{
+    margin: 4em 2em 0em 2em;
+}
+ 
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 2em 0em 2em;
+    background: #fff;
+    padding: 2em;
+    text-align: center;
+    justify-content: center;
+    border-radius: 6px;
+    
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 2em 0em 2em;
+    background: #fff;
+    padding: 2em;
+    text-align: center;
+    border-radius: 6px;
+    text-shadow: #007bff 5px 4px 5px;
+}
+
+.footer a {
+    color: #333; 
+    text-decoration: none; 
+    margin: 0 1em;
+    text-shadow: #007bff 5px 4px 5px;
+}
+
+.footer a:hover {
+    color: #007bff; 
+}
+
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+@media all and (max-width: 600px){
+    .card{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card img{
+        width: 100%;
+    }
+}
